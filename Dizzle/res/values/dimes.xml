@@ -1,0 +1,17 @@
+<resources>
+
+    <dimen name="textsize">20sp</dimen>
+     <dimen name="textsize14">14sp</dimen>
+    <dimen name="drawunit_width">160dip</dimen>
+    <dimen name="drawunit_height">60dip</dimen>
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="margin5">5dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="padding3">3dp</dimen>
+    <dimen name="padding5">5dp</dimen>
+    <dimen name="edit_logo">50dp</dimen>
+    <dimen name="edit_logo40">40dp</dimen>
+    <dimen name="right_arrow">30dp</dimen>
+    <dimen name="edit_logo10">10dp</dimen>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layoutActionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="6dp"
+        android:background="@color/Back_Color" >
+
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/edit_profile"
+            android:textColor="#FFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/loginTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/loginTitle"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="&lt; Vendors"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/txtPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/loginTitle"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/loginTitle"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="+"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listVendors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:dividerHeight="2dp"
+    	android:divider="@drawable/list_divider"/>
+
+</LinearLayout>

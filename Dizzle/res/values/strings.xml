@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dizzle</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="photo">Photo</string>
+    <string name="background">Background</string>
+    <string name="logo">Logo</string>
+    <string name="color">Color</string>
+    <string name="slogan">Slogan</string>
+    <string name="personal">Personal</string>
+    <string name="company">Company</string>
+    <string name="ewm_realty">EWM Realty</string>
+    <string name="meg">Meg</string>
+    <string name="reset">Reset</string>
+    <string name="web">Web</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="licenseno">License Number</string>
+    <string name="done">Done</string>
+
+</resources>

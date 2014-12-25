@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edittext_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Back_Color"
+        android:paddingBottom="6dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/color_editprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/color"
+            android:textColor="#FFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/color_editprofile"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/color_editprofile"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/edit_profile"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/txtPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/color_editprofile"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/color_editprofile"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/reset"
+            android:textColor="#FFF"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin5"
+        android:background="@drawable/edittext_background"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/show_coloricon"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="1dp" />
+
+        <TextView
+            android:id="@+id/show_textcolorcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <com.dizzle.ui.ColorPicker
+        android:id="@+id/colorPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.8" />
+
+</LinearLayout>

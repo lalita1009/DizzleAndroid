@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Back_Color"
+        android:paddingBottom="6dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/edit_profile"
+            android:textColor="#FFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/loginTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/loginTitle"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/cancel"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/txtPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/loginTitle"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/loginTitle"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/save"
+            android:textColor="#FFF"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding3" >
+
+                <ImageView
+                    android:id="@+id/edit_vandore_photoimg"
+                    android:layout_width="@dimen/edit_logo"
+                    android:layout_height="@dimen/edit_logo"
+                    android:src="@drawable/ex_back"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY" />
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_photo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_logo"
+                    android:layout_marginLeft="@dimen/margin5" >
+
+                    <TextView
+                        android:id="@+id/edit_vandore_photo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/widget_margin"
+                        android:focusable="false"
+                        android:text="@string/photo"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/GRAY" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding3" >
+
+                <ImageView
+                    android:id="@+id/edit_vandor_backgroundimg"
+                    android:layout_width="@dimen/edit_logo"
+                    android:layout_height="@dimen/edit_logo"
+                    android:src="@drawable/ex_back"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/app_name" />
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_background"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_logo"
+                    android:layout_marginLeft="@dimen/margin5" >
+
+                    <TextView
+                        android:id="@+id/edit_vandore_background"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/widget_margin"
+                        android:focusable="false"
+                        android:text="@string/background"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/GRAY" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding3" >
+
+                <ImageView
+                    android:id="@+id/edit_vandor_logoimg"
+                    android:layout_width="@dimen/edit_logo"
+                    android:layout_height="@dimen/edit_logo"
+                    android:src="@drawable/ex_back"
+                    android:contentDescription="@string/app_name" />
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_logo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_logo"
+                    android:layout_marginLeft="@dimen/margin5" >
+
+                    <TextView
+                        android:id="@+id/edit_vandore_logo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/widget_margin"
+                        android:focusable="false"
+                        android:text="@string/logo"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/GRAY" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edit_logo10"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding3" >
+
+                <ImageView
+                    android:id="@+id/edit_vandore_img"
+                    android:layout_width="@dimen/edit_logo"
+                    android:layout_height="@dimen/edit_logo"
+                    android:background="@drawable/ex_back"
+                    android:contentDescription="@string/app_name" />
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_logo"
+                    android:layout_marginLeft="@dimen/margin5" >
+
+                    <TextView
+                        android:id="@+id/edit_vandore_color"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/widget_margin"
+                        android:focusable="false"
+                        android:text="@string/color"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize" />
+
+                    <ImageButton
+                        android:layout_width="@dimen/right_arrow"
+                        android:layout_height="@dimen/right_arrow"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/rightarrow"
+                        android:contentDescription="@string/app_name" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/GRAY" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding3" >
+
+                <ImageView
+                    android:layout_width="@dimen/edit_logo"
+                    android:layout_height="@dimen/edit_logo"
+                    android:background="@drawable/icoinformation"
+                    android:contentDescription="@string/app_name" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_logo"
+                    android:layout_marginLeft="@dimen/margin5" >
+
+                    <EditText
+                        android:id="@+id/edit_vandore_slogan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/widget_margin"
+                        android:background="@null"
+                        android:hint="@string/slogan"
+                        android:imeOptions="actionDone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/GRAY" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding3" >
+
+                <ImageView
+                    android:layout_width="@dimen/edit_logo"
+                    android:layout_height="@dimen/edit_logo"
+                    android:background="@drawable/icopass"
+                    android:contentDescription="@string/app_name" />
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_personal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_logo"
+                    android:layout_marginLeft="@dimen/margin5" >
+
+                    <TextView
+                        android:id="@+id/edit_vandore_personal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/widget_margin"
+                        android:focusable="false"
+                        android:text="@string/personal"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/edit_vandor_rightarrow2"
+                        android:text="@string/meg"
+                        android:textColor="@color/GRAY" />
+
+                    <ImageButton
+                        android:id="@+id/edit_vandor_rightarrow2"
+                        android:layout_width="@dimen/right_arrow"
+                        android:layout_height="@dimen/right_arrow"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/rightarrow"
+                        android:contentDescription="@string/app_name" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/GRAY" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding3" >
+
+                <ImageView
+                    android:layout_width="@dimen/edit_logo"
+                    android:layout_height="@dimen/edit_logo"
+                    android:background="@drawable/icostore"
+                    android:contentDescription="@string/app_name" />
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_company"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_logo"
+                    android:layout_marginLeft="@dimen/margin5" >
+
+                    <TextView
+                        android:id="@+id/edit_vandore_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_margin"
+                        android:focusable="false"
+                        android:text="@string/company"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/edit_vandor_rightarrow3"
+                        android:text="@string/ewm_realty"
+                        android:textColor="@color/GRAY" />
+
+                    <ImageButton
+                        android:id="@+id/edit_vandor_rightarrow3"
+                        android:layout_width="@dimen/right_arrow"
+                        android:layout_height="@dimen/right_arrow"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/rightarrow"
+                        android:contentDescription="@string/app_name" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/GRAY" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

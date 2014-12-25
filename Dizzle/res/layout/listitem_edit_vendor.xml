@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:gravity="center_vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="2.0dip"
+        android:src="@drawable/icostore" />
+
+    <TextView
+        android:id="@+id/txtEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="2.0dip"
+        android:text="Edit"
+        android:textColor="@color/Back_Color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/txtEdit"
+        android:layout_toRightOf="@id/imgIcon"
+        android:padding="2.0dip"
+        android:text="Test Mcgee"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/itemname_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/itemname"
+        android:layout_below="@id/itemname"
+        android:padding="2.0dip"
+        android:text="Test Mcgee"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtPhoneEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/itemname_1"
+        android:layout_below="@id/itemname_1"
+        android:padding="2.0dip"
+        android:text="(555)555-1222  frogs@fram.com"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+</RelativeLayout>

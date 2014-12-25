@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Back_Color"
+        android:paddingBottom="6dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/company"
+            android:textColor="#FFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/loginTitle"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/loginTitle"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/done"
+            android:textColor="#FFF"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding3" >
+
+        <ImageView
+            android:id="@+id/company_ewmimg"
+            android:layout_width="@dimen/edit_logo40"
+            android:layout_height="@dimen/edit_logo40"
+            android:background="@drawable/icostore"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_logo40"
+            android:layout_marginLeft="@dimen/margin5" >
+
+            <EditText
+                android:id="@+id/company_ewm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/widget_margin"
+                android:background="@null"
+                android:text="EWM Reality"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize14" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/GRAY" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding3" >
+
+        <ImageView
+            android:id="@+id/company_ewmimg"
+            android:layout_width="@dimen/edit_logo40"
+            android:layout_height="@dimen/edit_logo40"
+            android:background="@drawable/icolocation"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_logo40"
+            android:layout_marginLeft="@dimen/margin5" >
+
+            <EditText
+                android:id="@+id/company_ewm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/widget_margin"
+                android:background="@null"
+                android:text="550 Dixity HWY"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize14" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/GRAY" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding3" >
+
+        <ImageView
+            android:id="@+id/company_ewmimg"
+            android:layout_width="@dimen/edit_logo40"
+            android:layout_height="@dimen/edit_logo40"
+            android:background="@drawable/icostore"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_logo40"
+            android:layout_marginLeft="@dimen/margin5" >
+
+            <EditText
+                android:id="@+id/company_ewm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/widget_margin"
+                android:background="@null"
+                android:text="Miami"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize14" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/GRAY" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding3" >
+
+        <ImageView
+            android:id="@+id/company_ewmimg"
+            android:layout_width="@dimen/edit_logo40"
+            android:layout_height="@dimen/edit_logo40"
+            android:background="@drawable/icostore"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_logo"
+            android:layout_marginLeft="@dimen/margin5" >
+
+            <EditText
+                android:id="@+id/company_ewm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/widget_margin"
+                android:text="FL"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize14" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/GRAY" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding3" >
+
+                <ImageView
+                    android:id="@+id/company_ewmimg"
+                    android:layout_width="@dimen/edit_logo40"
+                    android:layout_height="@dimen/edit_logo40"
+                    android:background="@drawable/icostore"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_logo"
+                    android:layout_marginLeft="@dimen/margin5" >
+
+                    <EditText
+                        android:id="@+id/company_ewm"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/widget_margin"
+                        android:text="33146"
+                        android:background="@null"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize14" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/GRAY" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

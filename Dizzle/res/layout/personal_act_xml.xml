@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Back_Color"
+        android:paddingBottom="6dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/personal"
+            android:textColor="#FFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/loginTitle"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/loginTitle"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/done"
+            android:textColor="#FFF"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:padding="@dimen/padding5"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding3" >
+
+            <ImageView
+                android:id="@+id/persoanl_megimg"
+                android:layout_width="@dimen/edit_logo40"
+                android:layout_height="@dimen/edit_logo40"
+                android:background="@drawable/icopass"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_logo"
+                android:layout_marginLeft="@dimen/margin5" >
+
+                <EditText
+                    android:id="@+id/persoanl_meg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/widget_margin"
+                    android:text="@string/meg"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize14" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/GRAY" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding3" >
+
+            <ImageView
+                android:id="@+id/persoanl_dellvalimg"
+                android:layout_width="@dimen/edit_logo40"
+                android:layout_height="@dimen/edit_logo40"
+                android:background="@drawable/icopass"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_logo"
+                android:layout_marginLeft="@dimen/margin5" >
+
+                <EditText
+                    android:id="@+id/persoanl_dellval"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/widget_margin"
+                    android:text="Del Valle"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize14" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/GRAY" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding3" >
+
+            <ImageView
+                android:id="@+id/persoanl_reatorimg"
+                android:layout_width="@dimen/edit_logo40"
+                android:layout_height="@dimen/edit_logo40"
+                android:background="@drawable/icopass"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_logo"
+                android:layout_marginLeft="@dimen/margin5" >
+
+                <EditText
+                    android:id="@+id/persoanl_reator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/widget_margin"
+                    android:text="Realtor"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize14" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/GRAY" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding3" >
+
+            <ImageView
+                android:id="@+id/persoanl_lincenoimg"
+                android:layout_width="@dimen/edit_logo40"
+                android:layout_height="@dimen/edit_logo40"
+                android:background="@drawable/icopass"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_logo"
+                android:layout_marginLeft="@dimen/margin5" >
+
+                <EditText
+                    android:id="@+id/persoanl_linceno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/widget_margin"
+                    android:hint="@string/licenseno"
+                    android:textColor="@color/black"
+                    android:background="@null"
+                    android:textSize="@dimen/textsize14" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/GRAY" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding3" >
+
+            <ImageView
+                android:id="@+id/persoanl_phoneimg"
+                android:layout_width="@dimen/edit_logo40"
+                android:layout_height="@dimen/edit_logo40"
+                android:background="@drawable/icophone"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_logo40"
+                android:layout_marginLeft="@dimen/margin5" >
+
+                <EditText
+                    android:id="@+id/persoanl_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/widget_margin"
+                    android:text="6199802"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize14" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/GRAY" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding3" >
+
+            <ImageView
+                android:id="@+id/persoanl_emailimg"
+                android:layout_width="@dimen/edit_logo40"
+                android:layout_height="@dimen/edit_logo40"
+                android:background="@drawable/icomail"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_logo40"
+                android:layout_marginLeft="@dimen/margin5" >
+
+                <EditText
+                    android:id="@+id/persoanl_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/widget_margin"
+                    android:text="clauer@gmail.com"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize14" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/GRAY" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding3" >
+
+            <ImageView
+                android:id="@+id/persoanl_webimg"
+                android:layout_width="@dimen/edit_logo40"
+                android:layout_height="@dimen/edit_logo40"
+                android:background="@drawable/icoworld"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_logo40"
+                android:layout_marginLeft="@dimen/margin5" >
+
+                <EditText
+                    android:id="@+id/persoanl_web"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/widget_margin"
+                    android:text="WWW.world.com"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize14" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/GRAY" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
